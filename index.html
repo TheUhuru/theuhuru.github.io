@@ -5,12 +5,12 @@
   <body style="margin : 0px; overflow: hidden;">
     <a-scene embedded arjs>
 
-      <a-marker type='pattern' url='KPMGlogoqr.patt'>
+      <a-marker-camera type='pattern' url='KPMGlogoqr.patt'>
             <!--<a-box position='0 0.5 0' material='color: green;'></a-box>-->
             <a-text value="Hello, World!"></a-text>
             <!--<a-image src="logo.png" scale="0.5 0.5 0.5"></a-image>-->
             <a-entity obj-model="obj: #tree-obj; mtl: #tree-mtl" scale="0.002 0.002 0.002"></a-entity>
-      </a-marker>
+      </a-marker-camera>
       
       <a-assets type='pattern' url='KPMGlogoqr.patt'>
             <a-asset-item id="tree-obj" src="lighthouse.obj" ></a-asset-item>
