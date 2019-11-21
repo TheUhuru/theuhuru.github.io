@@ -5,13 +5,9 @@
   <body style="margin : 0px; overflow: hidden;">
     <a-scene embedded arjs>
 
-      <a-marker type='pattern' url='pattern-logoqr.patt'>
-            <!--<a-box position='0 0.5 0' material='color: green;'></a-box>-->
-            <!--<a-text value="Hello, World!"></a-text> -->
-            <!--<a-image src="logo.png" scale="0.5 0.5 0.5"></a-image>-->
-            <!-- <a-entity obj-model="obj: #tree-obj; mtl: #tree-mtl" scale="0.002 0.002 0.002"></a-entity> -->
-            <a-entity gltf-model-next="src: url(scene.gltf);"></a-entity>
-      </a-marker>
+     <a-marker-camera type='pattern' url='pattern-KPMG_3.patt'>
+        <a-entity gltf-model="url(./scene.gltf.gltf)" scale="0.05 0.05 0.05" animation-mixer="clip: run_*"></a-entity>        
+    </a-marker-camera>
       
       <a-assets>
         <a-asset-item id="tree" src="scene.gltf"></a-asset-item>
