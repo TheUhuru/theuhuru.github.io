@@ -6,11 +6,12 @@
     <a-scene embedded arjs>
 
      <a-marker-camera type='pattern' url='pattern-logoqr.patt'>
-        <a-entity gltf-model="#tree" scale="0.01 0.01 0.01" animation-mixer="clip: run_*"></a-entity>        
+        <!-- <a-entity gltf-model="url(./scene.gltf)" scale="0.01 0.01 0.01" animation-mixer="clip: run_*"></a-entity>-->
+        <a-entity gltf-model="#mech" scale="0.01 0.01 0.01" animation-mixer="clip: run_*"></a-entity>          
     </a-marker-camera>
       
       <a-assets>
-        <a-asset-item id="tree" src="scene.gltf"></a-asset-item>
+        <a-asset-item id="mech" src="scene.gltf"></a-asset-item>
       </a-assets>
        
       <a-entity camera></a-entity>  
